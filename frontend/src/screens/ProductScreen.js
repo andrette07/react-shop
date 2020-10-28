@@ -9,7 +9,7 @@ const ProductScreen = ({ match }) => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`/product/${match.params.id}`);
+      const { data } = await axios.get(`/products/${match.params.id}`);
 
       setProduct(data);
     };
